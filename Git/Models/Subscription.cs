@@ -6,5 +6,11 @@ namespace Git
     {
         public Guid SubscriptionId { get; set; }
         public DateTime CreatedDate { get; set; }
+
+        public Subscription()
+        {
+            SubscriptionId = Guid.NewGuid();
+            CreatedDate = DateTime.Now;
+        }
     }
 }
